@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+    padding: 10rem;
+}
+.title {
+  font-size: 2rem;
+}
+.details {
+  border: 1px solid #dadada;
+  border-radius: .25rem;
+  padding: 2rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.label {
+    font-size: 1rem;
+    color: rgb(245, 227, 227);
+  }
+.value {
+  font-size: 1rem;
+  margin: 0;
+  margin-left: 1rem;
+}
