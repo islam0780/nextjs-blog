@@ -32,6 +32,15 @@ const Navbar = () => {
             </div>
           </Link>
 
+          <Link
+            href="/almesrah"
+            
+          >
+            <div className={styles.card}>
+            <h2>Almesrah &rarr;</h2>
+            </div>
+          </Link>
+
         </div>
       </main>
       
