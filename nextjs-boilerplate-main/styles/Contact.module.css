@@ -1,15 +1,18 @@
 .container {
     text-align: center;
     padding: 10rem;
+    border: 1px solid #dadada;
+  border-radius: .25rem;
+  padding: 2rem;
 }
 .title {
   font-size: 2rem;
 }
-.details {
+/* .details {
   border: 1px solid #dadada;
   border-radius: .25rem;
   padding: 2rem;
-}
+} */
 .list {
   list-style: none;
   display: flex;
@@ -24,4 +27,15 @@
   font-size: 1rem;
   margin: 0;
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container .title {
+    float: none;
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    
+  }
 }

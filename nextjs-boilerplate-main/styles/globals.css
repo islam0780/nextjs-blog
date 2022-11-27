@@ -6,13 +6,21 @@ body {
  
   color: rgb(110, 215, 212);
   font-family: "Nunito";
-  background-image: url("/mm2.jpg") ;
-  background-color: royalblue;
-  background-size: 100% ;
+  /*background-image: url("/mm2.jpg") ;*/
+  /* background-color: rgb(0, 55, 222);
+  background-size: 170%; */
+  background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 a {
-  color: #333;
+  color:darkorange;
+ 
+  
+ 
   text-decoration: none;
+  text-align: center;
 }
 .content {
   max-width: 960px;
@@ -46,4 +54,11 @@ footer {
 .not-found a{
   color: #4979ff;
   text-decoration: underline;
+}
+ul {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
 }

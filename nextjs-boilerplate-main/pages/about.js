@@ -13,7 +13,9 @@ export default function About(){
         <div className={styles.container}>
             <h2 className={styles.title}>About us</h2>
             <p className={styles.description}>
-            Voittoa tavoittelematon järjestö, joka yrittää yhdistää eri kulttuureja ympäri maailmaa A non.
+            Almesrah ry
+
+Yhdistyksen tarkoituksena on edistää erilaisten kulttuurien luomista suomalaiseen yhteiskuntaan. Toimimme myös kansainvälisellä tasolla. Almesrah toimii siltana monikulttuurisen toiminnan edistäjänä.Teemme yhteistyötä muiden järjestöjen sekä viranomaisten kanssa. Tarkoitus on rakentaa mahdollisimman selkeätä yhteisymmärrystä monikulttuurien välissä.
             </p>
         </div>
         </>

@@ -22,12 +22,26 @@
 
 
 
-.title {
+/* .title {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:rgb(75, 183, 165);
+  color:rgb(202, 238, 194);
+} */
+
+.title {
+  font-size: 100px;
+  font-weight: 1000;
+  background-image: linear-gradient(to left, #427278, #95cad3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 2px 2px 4px rgba(218, 210, 227, 0.1),
+               3px 4px 4px rgba(171, 166, 176, 0.15),
+               4px 6px 4px rgba(147, 211, 153, 0.2),
+               5px 8px 4px rgba(179, 147, 211, 0.25);
+ 
 }
 
 
@@ -38,12 +52,12 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-  margin-top: 3rem;
+  margin-top: 2rem;
   color:rgb(100, 158, 200); 
 }
 
 .card {
-  margin: 1rem;
+ /*  margin: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: white; 
@@ -51,7 +65,15 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 70%;
+  width: 60%; */
+
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
 }
 
 .card:hover,
@@ -71,5 +93,15 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
   }
 }

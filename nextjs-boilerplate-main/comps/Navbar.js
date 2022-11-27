@@ -40,6 +40,14 @@ const Navbar = () => {
             <h2>Almesrah &rarr;</h2>
             </div>
           </Link>
+          <Link
+            href="/Projects"
+            
+          >
+            <div className={styles.card}>
+            <h2>Projects &rarr;</h2>
+            </div>
+          </Link>
 
         </div>
       </main>
