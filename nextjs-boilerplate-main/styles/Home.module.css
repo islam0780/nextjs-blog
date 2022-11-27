@@ -31,7 +31,8 @@
 } */
 
 .title {
-  font-size: 100px;
+  display: flex;
+  font-size: 70px;
   font-weight: 1000;
   background-image: linear-gradient(to left, #427278, #95cad3);
   color: transparent;
@@ -91,8 +92,10 @@
 
 @media (max-width: 600px) {
   .grid {
+    
     width: 100%;
     flex-direction: column;
+    
   }
 }
 @media screen and (max-width: 992px) {
