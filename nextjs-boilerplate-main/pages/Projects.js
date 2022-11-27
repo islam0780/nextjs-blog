@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import styles from '../styles/Projects.module.css'
+import styles from '../styles/Projects.module.css';
 import Image from "next/image";
 
 export default function Projects(){
