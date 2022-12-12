@@ -1,4 +1,4 @@
-import Layout from '../comps/Layout';
+
 import { useState } from 'react';
 
 type Props = {

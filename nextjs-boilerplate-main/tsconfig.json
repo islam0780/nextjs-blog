@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "lib/mongodb.js", "pages/api/blogs.js"  ],
+, "lib/mongodb.js", "../../types/blogs.js"  ],
   "exclude": [
     "node_modules"
   ]
