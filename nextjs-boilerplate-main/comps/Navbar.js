@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+
 const Navbar = () => {
   return (
     <nav>
@@ -40,14 +41,33 @@ const Navbar = () => {
             <h2>Almesrah &rarr;</h2>
             </div>
           </Link>
-          <Link
+          {/* <Link
             href="/Projects"
             
           >
             <div className={styles.card}>
             <h2>Projects &rarr;</h2>
             </div>
+          </Link> */}
+
+          <Link
+            href="/posts"
+            
+          >
+            <div className={styles.card}>
+            <h2>Projects &rarr;</h2>
+            </div>
           </Link>
+
+         {/*  <Link
+            href="/index1"
+            
+          >
+            <div className={styles.card}>
+            <h2>index1 &rarr;</h2>
+            </div>
+          </Link> */}
+          
 
         </div>
       </main>
