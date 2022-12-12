@@ -32,7 +32,7 @@ export default function Posts(props: Props) {
 
   const handleDeletePost = async (postId: string) => {
     try {
-      let response = await fetch('https://nextjs-blog-y3g5.vercel.app/deletePost?id=' + postId, {
+      let response = await fetch('https://nextjs-blog-y3g5.vercel.app/api/deletePost?id=' + postId, {
         method: 'POST',
         headers: {
           'Accept': 'application/json, text/plain, */*',
