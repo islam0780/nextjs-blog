@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+//import React, { useState } from "react";
 import type {
     GetStaticPropsContext,
     GetStaticPropsResult,
 } from 'next';
-import Layout from '../../comps/Layout';
+
 
 type PageParams = {
     id: string
