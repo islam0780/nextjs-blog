@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {
+import type {
     GetStaticPropsContext,
     GetStaticPropsResult,
 } from 'next';
@@ -88,7 +88,7 @@ export async function getStaticPaths() {
                 let response = await fetch('https://nextjs-blog-y3g5.vercel.app/api/editPost?id=' + _id, {
                     method: 'POST',
                     body: JSON.stringify({
-                        title: postTitle,
+                        year: postTitle,
                         content: postContent
                     }),
                     headers: {
@@ -132,7 +132,7 @@ export async function getStaticPaths() {
                     ) : null
                 }
                 <div className="form-group">
-                    <label>Title</label>
+                    <label>Year</label>
                     <input type="text"
                         placeholder="Title of the post"
                         onChange={e => setPostTitle(e.target.value)}

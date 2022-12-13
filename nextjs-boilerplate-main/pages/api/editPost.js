@@ -6,7 +6,7 @@ export default async (req, res) => {
         const client = await clientPromise;
         const db = client.db("posts");
         const { id } = req.query;
-        const { title, content } = req.body;
+        const { year, content } = req.body;
 
         const post = await db
             .collection("posts")
@@ -16,7 +16,7 @@ export default async (req, res) => {
                 },
                 {
                     $set: {
-                        "title": title,
+                        "year": year,
                         "content": content
                     }
                 }

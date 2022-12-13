@@ -4,12 +4,12 @@ export default async (req, res) => {
     try {
         const client = await clientPromise;
         const db = client.db("posts");
-        const { title, content } = req.body;
+        const { year, content } = req.body;
 
         const post = await db
             .collection("posts")
             .insertOne({
-                title,
+                year,
                 content
             });
 
