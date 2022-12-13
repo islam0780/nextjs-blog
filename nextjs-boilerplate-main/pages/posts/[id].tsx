@@ -110,7 +110,7 @@ export async function getStaticPaths() {
     }
 
     // no such post exists
-    if (!year && !content && !id && process.browser) {
+    if (!year && !content && !_id && process.browser) {
         return window.location.href = '/';
     }
 
