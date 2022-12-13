@@ -74,9 +74,9 @@ export async function getStaticPaths() {
     }
 }
 
- export default function EditPost({ post: { _id, title, content } }: ContentPageProps) {
+ export default function EditPost({ post: { _id, year, content } }: ContentPageProps) {
 
-    const [postTitle, setPostTitle] = useState(title);
+    const [postTitle, setPostTitle] = useState(year);
     const [postContent, setPostContent] = useState(content);
     const [error, setError] = useState('');
     const [message, setMessage] = useState('');
