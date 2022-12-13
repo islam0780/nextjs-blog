@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import type {
+import {
     GetStaticPropsContext,
     GetStaticPropsResult,
 } from 'next';
