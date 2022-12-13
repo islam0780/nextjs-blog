@@ -13,7 +13,7 @@ type Post = {
 
 export async function getServerSideProps() {
   try {
-    let response = await fetch('https://nextjs-blog-y3g5.vercel.app/api/getPosts');
+    let response = await fetch('http://localhost:3000/api/getPosts');
     let posts = await response.json();
 
     return {
@@ -32,7 +32,7 @@ export default function Posts(props: Props) {
 
   const handleDeletePost = async (postId: string) => {
     try {
-      let response = await fetch('https://nextjs-blog-y3g5.vercel.app/api/deletePost?id=' + postId, {
+      let response = await fetch('http://localhost:3000/api/deletePost?id=' + postId, {
         method: 'POST',
         headers: {
           'Accept': 'application/json, text/plain, */*',

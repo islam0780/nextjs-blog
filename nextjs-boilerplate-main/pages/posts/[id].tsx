@@ -29,7 +29,7 @@ export async function getStaticProps({
     params
 }: GetStaticPropsContext<PageParams>): Promise<GetStaticPropsResult<ContentPageProps>> {
     try {
-        let response = await fetch('https://nextjs-blog-y3g5.vercel.app/api/getPost?id=' + params?.id);
+        let response = await fetch('http://localhost:3000/api/getPost?id=' + params?.id);
 
         let responseFromServer: ResponseFromServer = await response.json();
 
@@ -59,7 +59,7 @@ export async function getStaticProps({
 }
 
 export async function getStaticPaths() {
-    let posts = await fetch('https://nextjs-blog-y3g5.vercel.app/api/getPosts');
+    let posts = await fetch('http://localhost:3000/api/getPosts');
 
     let postFromServer: [Post] = await posts.json();
     return {
@@ -85,7 +85,7 @@ export async function getStaticPaths() {
         e.preventDefault();
         if (postTitle && postContent) {
             try {
-                let response = await fetch('https://nextjs-blog-y3g5.vercel.app/api/editPost?id=' + _id, {
+                let response = await fetch('http://localhost:3000/api/editPost?id=' + _id, {
                     method: 'POST',
                     body: JSON.stringify({
                         year: postTitle,
