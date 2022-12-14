@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import styles from '../styles/About.module.css'
+import ReactPlayer from 'react-player'
 
 export default function About(){
     return(
@@ -15,9 +16,15 @@ export default function About(){
             <p className={styles.description}>
             Almesrah ry
 
-Yhdistyksen tarkoituksena on edistää erilaisten kulttuurien luomista suomalaiseen yhteiskuntaan. Toimimme myös kansainvälisellä tasolla. Almesrah toimii siltana monikulttuurisen toiminnan edistäjänä.Teemme yhteistyötä muiden järjestöjen sekä viranomaisten kanssa. Tarkoitus on rakentaa mahdollisimman selkeätä yhteisymmärrystä monikulttuurien välissä.
+    Yhdistyksen tarkoituksena on edistää erilaisten kulttuurien luomista suomalaiseen yhteiskuntaan. Toimimme myös kansainvälisellä tasolla. Almesrah toimii siltana monikulttuurisen toiminnan edistäjänä.Teemme yhteistyötä muiden järjestöjen sekä viranomaisten kanssa. Tarkoitus on rakentaa mahdollisimman selkeätä yhteisymmärrystä monikulttuurien välissä.
             </p>
+         
+
+
         </div>
+        
+       
         </>
     )
 }
+

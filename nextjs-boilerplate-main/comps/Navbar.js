@@ -60,14 +60,14 @@ const Navbar = () => {
             </div>
           </Link>
 
-         {/*  <Link
-            href="/index1"
+          <Link
+            href="/EspooTVnet"
             
           >
             <div className={styles.card}>
-            <h2>index1 &rarr;</h2>
+            <h2>EspooTVnet &rarr;</h2>
             </div>
-          </Link> */}
+          </Link> 
           
 
         </div>
